@@ -1,0 +1,39 @@
+{
+  "name": "genpark-turn-by-turn-conversational-slot-filler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time turn-by-turn spoken dialogue entity extractor and slot-filling engine for autonomous phone reservations.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "voice-agent",
+  "tags": [
+    "thunderphone",
+    "vapi",
+    "slot-filling",
+    "entity-extraction",
+    "conversational-ai"
+  ],
+  "inputs": {
+    "utterance_text": {
+      "type": "string"
+    },
+    "required_slots": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "extraction_id": {
+      "type": "string"
+    },
+    "filled_slots": {
+      "type": "object"
+    },
+    "slot_fulfillment_complete": {
+      "type": "boolean"
+    },
+    "slot_profile_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
